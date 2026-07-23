@@ -39,7 +39,7 @@ install_panel() {
     git clone https://github.com/welderhosting/Welder-Panel-v2
     
     # Navigate into the directory
-    cd Welder-Panel || { echo -e "${RED}[!] Failed to enter the directory!${NC}"; return; }
+    cd Welder-Panel-v2 || { echo -e "${RED}[!] Failed to enter the directory!${NC}"; return; }
     
     # Install node modules
     npm i 
