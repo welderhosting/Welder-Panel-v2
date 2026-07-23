@@ -96,7 +96,7 @@ async function startServer() {
   }
 
   httpServer.listen(PORT, () => {
-    console.log(`Welder-Panel-v2 running on port ${PORT}`);
+    console.log(`Welder-Panel running on port ${PORT}`);
   });
 }
 

@@ -1,4 +1,4 @@
-# Welder-Panel-v2
+# Welder-Panel
 
 Made by walksys
 
@@ -7,7 +7,7 @@ Made by walksys
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd Welder-Panel-v2
+   cd Welder-Panel
    ```
 
 2. Install dependencies:

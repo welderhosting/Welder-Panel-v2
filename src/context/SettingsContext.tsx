@@ -4,7 +4,7 @@ import axios from "axios";
 export const SettingsContext = createContext<any>(null);
 
 export const SettingsProvider = ({ children }: { children: React.ReactNode }) => {
-  const [panelName, setPanelName] = useState<string>("Welder-Panel-v2");
+  const [panelName, setPanelName] = useState<string>("Welder-Panel");
   const [panelLogo, setPanelLogo] = useState<string>("");
   const [panelBackgroundImage, setPanelBackgroundImage] = useState<string>("");
   const [panelBackgroundBlur, setPanelBackgroundBlur] = useState<number>(10);
