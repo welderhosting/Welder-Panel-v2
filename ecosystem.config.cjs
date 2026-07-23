@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "jtg-panel",
+      name: "welder-panel",
       script: "npm",
       args: "run start",
       env: {

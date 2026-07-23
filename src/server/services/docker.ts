@@ -81,7 +81,7 @@ export const createServerContainer = async (serverData: any) => {
 
   const container = await docker.createContainer({
     Image: dockerImage,
-    name: `jtg-server-${serverData.id}`,
+    name: `welder-server-${serverData.id}`,
     Tty: true,
     OpenStdin: true,
     StdinOnce: false,

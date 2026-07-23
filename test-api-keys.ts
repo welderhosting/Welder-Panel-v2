@@ -4,7 +4,7 @@ import crypto from "crypto";
 import jwt from "jsonwebtoken";
 
 const API_URL = "http://localhost:3000/api";
-const JWT_SECRET = process.env.JWT_SECRET || "jtg-panel-super-secret";
+const JWT_SECRET = process.env.JWT_SECRET || "welder-panel-super-secret";
 
 async function runTests() {
   console.log("Starting API Key tests...");
@@ -42,7 +42,7 @@ async function runTests() {
     // Test 3: Admin can create key
     const createRes = await axios.post(`${API_URL}/admin/api-keys`, { label: "Admin Test Key" }, adminConfig);
     assert.strictEqual(createRes.status, 200);
-    assert.ok(createRes.data.key.startsWith("jtg_"));
+    assert.ok(createRes.data.key.startsWith("welder_"));
     const apiKey = createRes.data.key;
     const keyId = createRes.data.id;
     console.log("✓ Admin can create key");
@@ -58,7 +58,7 @@ async function runTests() {
     const rotateRes = await axios.post(`${API_URL}/admin/api-keys/${keyId}/rotate`, {}, adminConfig);
     assert.strictEqual(rotateRes.status, 200);
     const newApiKey = rotateRes.data.key;
-    assert.ok(newApiKey.startsWith("jtg_"));
+    assert.ok(newApiKey.startsWith("welder_"));
     assert.notStrictEqual(apiKey, newApiKey);
     console.log("✓ Key can be rotated");
 

@@ -1,13 +1,13 @@
-# jtg panel
+# Welder-Panel-v2
 
-Made by Jishnu
+Made by walksys
 
 ## Installation
 
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd jtg-panel
+   cd Welder-Panel-v2
    ```
 
 2. Install dependencies:

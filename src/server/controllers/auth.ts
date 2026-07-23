@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { readJSON } from "../services/db.js";
 
-const JWT_SECRET = process.env.JWT_SECRET || "jtg-panel-super-secret";
+const JWT_SECRET = process.env.JWT_SECRET || "welder-panel-super-secret";
 
 export const login = async (req: Request, res: Response) => {
   const { username, password } = req.body;
