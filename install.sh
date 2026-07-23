@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear
+
 # Set colors for a better-looking menu
 RED='\033[0;31m'
 GREEN='\033[0;32m'
